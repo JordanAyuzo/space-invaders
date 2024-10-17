@@ -1,0 +1,76 @@
+
+#score, #Cont_vidas {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  left: 10px;
+  top: 2%;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+#Cont_vidas{
+  top: 2%;
+  left: 18%;
+}
+.botones{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+button {
+  margin-top: 1%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+button.atras {
+  left: 70%;
+  background-color: #3498db;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+button.atras:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(52, 152, 219, 0.5);
+}
+
+button.detener {
+  left: 75%;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+button.detener:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(231, 76, 60, 0.5);
+}
+
+button.reiniciar {
+  left: 80%;
+  transform: rotate(60deg);
+  background-color: #2ecc71;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+button.reiniciar:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(46, 204, 113, 0.5);
+}
+
+button:active {
+  transform: scale(0.95);
+}
