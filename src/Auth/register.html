@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Alejandro">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Login Page del videojuego ocupando bootstrap">
+	<title>Register Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+	<section class="flex-grow-1">
+		<div class="container h-100 d-flex flex-column justify-content-center">
+			<div class="row justify-content-sm-center">
+				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+					<div class="card shadow-lg mt-3">
+						<div class="card-body p-4">
+                            <h1 class="fs-4 card-title fw-bold mb-4 text-center">Register</h1>
+							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                                <div class="mb-3 text-center">
+                                    <i class="bi bi-person-circle" style="font-size: 3rem;"></i>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="mb-2 w-100">
+                                        <label for="inputUserName" class="form-label">User Name</label>
+									</div>
+                                    <input type="text" id="inputUserName" class="form-control" placeholder="Nombre de usuario" required>
+                                </div>
+								<div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                </div>
+								<div class="mb-3">
+									<div class="mb-2 w-100">
+                                        <label for="inputPassword" class="form-label">Password</label>
+									</div>
+                                    <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock" required>
+                                    <div id="passwordHelpBlock" class="form-text">
+                                        Your password must be 8 characters long.
+                                    </div>
+								</div>
+                                <div class="mb-3">
+									<div class="mb-2 w-100">
+                                        <label for="inputConfirmPassword" class="form-label">Confirm Password</label>
+									</div>
+                                    <input type="password" id="inputConfirmPassword" class="form-control" required>
+                                    <div id="confirmPasswordFeedback" class="invalid-feedback">
+                                        Las contraseñas no coinciden.
+                                    </div>
+                                </div>
+
+								<div class="d-flex align-items-center">
+									<button type="submit" class="btn btn-primary ms-auto">
+										Registrarme
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="card-footer py-3 border-0">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Footer fijo en el fondo -->
+    <footer class="footer mt-auto py-3 bg-light text-center text-muted w-100">
+        <div class="container">
+            Copyright &copy; 2024 Erik's y asociados.
+        </div>
+    </footer>
+
+	<script src="login.js"></script>
+</body>
+</html>
