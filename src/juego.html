@@ -1,55 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Space Invaders</title>
-  <link rel="stylesheet" href="style_fondo.css" />
+  <link rel="shortcut icon" href="#" />
   <style>
-    body {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: black;
+    canvas {
+      box-shadow: black 20px 10px 50px;
     }
 
-    #gameContainer {
-      position: relative;
+    h1 {
+      margin: 0px;
+      margin-bottom: 10px;
+      font-size: 2.9em;
+      font-family: "Helvetica";
     }
-    canvas {
-      display: block;
+
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px;
+      margin: 0px;
+      height: 100vh;
+      background-color: black;
     }
   </style>
 </head>
+
 <body>
-
-  <div id="gameContainer">
-    <!--<p id="score">
-    </p>-->
-    <div class="botones">
-      <button class="atras" id="myButton"><i class="bi bi-arrow-left-circle"></i></button>
-      <button class="detener" id="myButton"><i class="bi bi-stop-circle"></i></button>
-      <button class="reiniciar" id="myButton"><i class="bi bi-arrow-clockwise"></i></button>
-    </div>
-
-    <canvas id="gameCanvas"></canvas>
-
-    <div id="score">Score: <span id="vidas">0</span></div>
-    <div id="Cont_vidas">Vidas: <span id="vidas">3</span></div>
-
-  </div>
-
-  <!-- Script para manejar el audio -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
-    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-
-  <script src="./Juego.js"></script>
-
+  <h1>Space Invaders</h1>
+  <canvas id="game"></canvas>
+  <script type="module" src="./Juego.js"></script>
 </body>
+
 </html>
